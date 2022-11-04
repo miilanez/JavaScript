@@ -8,14 +8,14 @@ const pessoa = {
         num: '2400',
     },
 
-    nomeCompleto : function() {
+    nomeCompleto : () => {
         return this.primeiroNome + ' ' + this.sobrenome;
     }
 };
 
 pessoa.celular = '970707070';
 
-pessoa.enderecoCompleto = function() {
+pessoa.enderecoCompleto = () => {
     return `Rua: ${this.endereço.rua}, ${this.endereço.num}.`;
 }
 
